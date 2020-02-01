@@ -2,7 +2,7 @@ import axios from 'axios'
 import User from 'domain/User'
 import APIError from 'domain/APIError'
 
-axios.defaults.headers.post['Content-Type'] = 'application/json';
+axios.defaults.headers.post['Content-Type'] = 'application/json'
 
 axios.interceptors.response.use(
   response => response,
@@ -18,7 +18,7 @@ const parse = data => new User({
 })
 
 class UserService {
-  constructor() {
+  constructor () {
     const userData = localStorage.getItem('user')
     if (userData) this.user = new User(JSON.parse(userData))
   }
