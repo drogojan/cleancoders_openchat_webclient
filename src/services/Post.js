@@ -2,6 +2,8 @@ import axios from 'axios'
 import Post from 'domain/Post'
 import APIError from 'domain/APIError'
 
+axios.defaults.headers.post['Content-Type'] = 'application/json';
+
 axios.interceptors.response.use(
   response => response,
   error => error.response
