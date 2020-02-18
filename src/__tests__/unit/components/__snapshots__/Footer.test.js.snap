@@ -6,17 +6,8 @@ exports[`Footer renders 1`] = `
   <div class="container">
     <div class="row">
       <div class="col mr-auto">
-        <a href="https://codurance.com/"
-           target="_blank"
-           rel="noopener noreferrer"
-        >
-          Powered by Codurance.com
-        </a>
       </div>
       <div class="col text-right">
-        Crafted with
-        <i class="fa fa-heart text-danger">
-        </i>
       </div>
     </div>
   </div>
